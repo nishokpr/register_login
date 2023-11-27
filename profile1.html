@@ -1,0 +1,69 @@
+<!-- profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/profile1.js" defer></script>
+  <style>
+    body {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 50px;
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a.button-logout {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #dc3545;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button-logout:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="my-5">
+      <h2>Welcome to Your Profile</h2>
+      <p>Full Name: <span id="user-fullname"></span></p>
+      <p>Gender: <span id="user-gender"></span></p>
+      <p>Email: <span id="user-email"></span></p>
+    </div>
+  </div>
+
+  <a href="register.html" class="button-logout">Logout</a>
+</body>
+</html>
